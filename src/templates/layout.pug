@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
+    block title
+      title this is a default title
+    block styles
+      link(href="~/stylesheets/main.styl" rel="stylesheet")
+      link(href="~/stylesheets/vendor/bulma.sass" rel="stylesheet")
+      link(href="~/stylesheets/vendor/fontawesome.sass" rel="stylesheet")
+      //- if you want to add some stylesheets at child page, use append or prepend
+    block scripts
+      script(defer src="~/javascripts/vendor/fontawesome.js")
+      //- if you want to add some stylesheets at child page, use append or prepend
+
+  body
+    include header.pug
+    section.page
+      block content
+    include footer.pug
